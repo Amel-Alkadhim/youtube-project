@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    background-color: #dbdbdb; /* Light background color */
+    text-align: center;
+    padding: 20px;
+    justify-content: center; 
+  }
+  
+  .footer-section {
+    padding: 10px;
+  }
+  
+  .footer p {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    margin: 0;
+    color: rgb(0, 0, 0); /* Set text color to black */
+  }
+  
+  .heart {
+    color: #ab2f03; /* Coral Red for the heart */
+    font-size: 17px; /* Adjust heart size */
+  }
+
+  @media screen and (max-width: 600px){
+    .footer p {
+      font-size: 11px;
+  }
+}

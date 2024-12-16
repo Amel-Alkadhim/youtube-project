@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Youtube re-design project</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/video.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/contact.css">
+<link rel="stylesheet" href="styles/footer.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img class="menue" src="header icons\menu.svg">
+            <img class="youtube-logo" src="header icons\youtube-logo.svg">
+        </div>
+
+        <div class="Middle-section">
+            <input class ="search-bar" type="text" placeholder="search"> <!--input text feild--> <!--كلمة بحث موجودة لكن عند الكتابة في البوكس تختفي--> 
+       
+            <button class="search-button">
+            <img  class= "search-icon" src="header icons/search.svg">
+            <span class="tooltip">Search</span>
+        </button>
+
+        <button class="voice-search-button">
+            <img class= "voice-search-icon" src="header icons\voice-search-icon.svg">
+            <span class="tooltip">Search with your voice</span>
+        </button>
+        </div>
+
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="header icons\upload.svg">
+                <span class="tooltip">Create</span>
+            </div>
+
+            <div class="youtube-apps-icon-container">
+            <img class= "youtube-apps-icon" src="header icons\youtube-apps.svg">
+            <span class="tooltip">YouTube Apps</span>
+            </div>
+
+            <div class="notifications-icon-container">
+            <img class= "notifications-icon" src="header icons\notifications.svg">
+            <span class="tooltip">Notifications</span>
+            <div class="notifications-count">3</div>
+            </div>
+
+            <img class="current-user-picture" src="header icons/profile-picture.jpg">
+        </div>
+        
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="side-bar icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="side-bar icons/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="side-bar icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="side-bar icons/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="side-bar icons/youtube-music.svg">
+            <div>Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="side-bar icons/library.svg">
+            <div>Library</div>
+        </div>
+    </nav>
+     
+    <main>
+
+        <section class="video-grid">
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=shQEXpUwaIY" target="_blank">
+                    <img class="thumbnail" src= "Thumbnails\cyber security.jpg"> <!-- we put / in the first so that the app search about the image-->
+                </a>
+                <div class="video-time"> 1:20</div>
+                </div>
+                <div class="video-info-grid">
+                 <div class="channel-picture"> 
+                     <img class="profile-picture" src="channel-picture\Murdoch University.jpg">
+                 </div>
+                 <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=shQEXpUwaIY" target="_blank" style="text-decoration: none; color: inherit;">
+                        <p class="video-title">What is cyber security?</p>
+                    </a>
+             
+         <p class="video-author"> Murdoch University </p>
+         
+             <p class="video-stats">
+                 134K views &#183; 5 years ago
+             </p> 
+                 </div>
+                </div>
+             </div>
+         
+             <div class="video-preview">
+                 <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=O5nskjZ_GoI" target="_blank">
+                  <img class="thumbnail" src= "Thumbnails/Computer Science.jpg"> <!-- we put / in the first so that the app search about the image-->
+                  <div class="video-time"> 11:52</div>
+                </div>
+         
+                 <div class="video-info-grid">
+                  <div class="channel-picture"> 
+                      <img class="profile-picture" src="channel-picture/CrashCourse.jpg">
+                  </div>
+                  <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=O5nskjZ_GoI" target="_blank" style="text-decoration: none; color: inherit;">
+                      <p class="video-title"> Early Computing: Crash Course Computer Science #1 </p>
+                    </a>
+              
+          <p class="video-author"> CrashCourse </p>
+          
+              <p class="video-stats">
+                  4M views &#183; 7 years ago
+              </p> 
+                  </div>
+                 </div>
+              </div>
+          
+              <div class="video-preview">
+                 <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=avZTQgLs064" target="_blank">
+                  <img class="thumbnail" src= "Thumbnails/Computer Engineering.jpg"> <!-- we put / in the first so that the app search about the image-->
+                  <div class="video-time"> 8:53</div>
+                </div>
+         
+                 <div class="video-info-grid">
+                  <div class="channel-picture"> 
+                      <img class="profile-picture" src="channel-picture/Zach Star.jpg">
+                  </div>
+                  <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=avZTQgLs064" target="_blank" style="text-decoration: none; color: inherit;">
+                      <p class="video title"> What is Computer Engineering? </p>
+                    </a>
+              
+          <p class="video-author"> Zach Star </p>
+          
+              <p class="video-stats">
+                  1.6M views &#183; 8 years ago
+              </p> 
+                  </div>
+                 </div>
+              </div>
+         
+              <div class="video-preview">
+                 <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=RBSUwFGa6Fk" target="_blank">
+                  <img class="thumbnail" src= "Thumbnails/data science.webp"> <!-- we put / in the first so that the app search about the image-->
+                  <div class="video-time"> 7:50</div>
+                </div>
+         
+                 <div class="video-info-grid">
+                  <div class="channel-picture"> 
+                      <img class="profile-picture" src="channel-picture/IBM Technology.jpg">
+                  </div>
+                  <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=RBSUwFGa6Fk" target="_blank" style="text-decoration: none; color: inherit;">
+                      <p class="video title"> What is Data Science? </p>
+                    </a>
+              
+          <p class="video-author"> IBM Technology </p>
+          
+              <p class="video-stats">
+                  1557K views &#183; 2 years ago
+              </p> 
+                  </div>
+                 </div>
+              </div>
+         
+              <div class="video-preview">
+                 <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=0uY5z125X7E" target="_blank">
+                  <img class="thumbnail" src= "Thumbnails/Electrical Engineering.jpg"> 
+                  <div class="video-time"> 1:59</div>
+                </div>
+         
+                 <div class="video-info-grid">
+                  <div class="channel-picture"> 
+                      <img class="profile-picture" src="channel-picture/University of Bath.jpg">
+                  </div>
+                  <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=0uY5z125X7E" target="_blank" style="text-decoration: none; color: inherit;">
+                      <p class="video title"> What is Electronic & Electrical Engineering? </p>
+                    </a>
+              
+          <p class="video-author"> University of Bath </p>
+          
+              <p class="video-stats">
+                  136K views &#183; 4 years ago
+              </p> 
+                  </div>
+                 </div>
+              </div>
+         
+              <div class="video-preview">
+                 <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=Sn0bOX5Hau4&list=PLAE4A9DB84AC5F823" target="_blank">
+                  <img class="thumbnail" src= "Thumbnails/biomedical engineering.jpg"> 
+                  <div class="video-time"> 42:29</div>
+                </div>
+         
+                 <div class="video-info-grid">
+                  <div class="channel-picture"> 
+                      <img class="profile-picture" src="channel-picture/YaleCourses.jpg">
+                  </div>
+                  <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=Sn0bOX5Hau4&list=PLAE4A9DB84AC5F823" target="_blank" style="text-decoration: none; color: inherit;">
+                      <p class="video title"> 1. What Is Biomedical Engineering? </p>
+                    </a>
+              
+                <p class="video-author"> YaleCourses </p>
+          
+                 <p class="video-stats">
+                  402k views &#183; 16 years ago
+                 </p> 
+                 
+                </div>
+                 
+                </div>
+              </div>
+        
+        </section>
+
+        <div class="contact">
+            <p>Contact me through Email
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Amelqaed@gmail.com&su=Website%20Development%20Request&body=I%20would%20like%20to%20develop%20a%20website." target="_blank" class="tooltip-wrapper">
+                <span class="Email" style="padding-left: -40px; padding-right: -3px;">✉</span>
+                <span class="tooltip">Amelqaed@gmail.com</span>
+              </a>
+            or Linkedin
+            <a href="https://www.linkedin.com/in/amel-alkadhim-31b86a269/" target="_blank" class="tooltip-wrapper">
+              <img class="Linkedin-logo" src="contact icons/Linkedin logo.png" alt="LinkedIn Logo">
+              <span class="tooltip">https://www.linkedin.com/in/amel-alkadhim-31b86a269/</span>
+            </a>
+            </p>
+          </div>
+
+            
+          </div>
+
+    </main>
+
+</body>
+
+    <footer class="footer">
+        <p>Developed with <span class="heart">♥</span> by <strong>Amel Alkadhim</strong> © Dec 2024</p> 
+    </footer>
+
+</html>

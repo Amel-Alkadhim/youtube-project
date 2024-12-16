@@ -1,0 +1,125 @@
+
+.thumbnail {
+width: 50px;
+height: 230px;
+display:block; /*cause the image to take up the entire line pushing the textbox to diffrent line*/
+
+}
+
+ .video-title{
+     margin: 0; 
+     /*width: 300px;-- there where an overflow, so we remove it then the p will take the entire space of container which is .video-info/
+     font-size: 14px;
+     font-weight: 500; /*regular font weight is 400, a semi bold is 500, bold is 700*/
+     line-height: 20px; /*space between lines*/
+     margin-bottom: 10px;
+ }
+
+ .video-info-grid{
+     display: grid;
+     grid-template-columns: 50px 1fr; /*for profile pic and the 2nd to take up the remaining amount of space*/
+ }
+
+/*.channel-picture{
+ display: inline-block; --so that it with video info class appear next to each other
+ width: 36px;
+ vertical-align: top -- to make the pic at the top of the container
+ }*/
+
+ .profile-picture{
+     width: 36px; /*small pic*/ /* if its 100% image will take the entire space of its container*/
+     border-radius: 50px; /*the image became in a circle not sequare mode*/
+     vertical-align: top;
+ }
+  
+ .thumbnail{
+     width: 100%; 
+ }
+
+ .thumbnail-row{
+   margin-bottom: 8px;  
+   position: relative;
+ }
+
+ .video-author,
+ .video-stats{
+    /*display: inline block -- to take as much space as needed,
+    then we changed it to display: block becouse we want author and stats and seperate lines, and p by defualt are display block so we delete it*/ 
+    font-size: 12px;
+    color: rgb(96,96,96)
+ }
+
+ .video-stats{
+    margin-top: 3px; /* Slight gap below author */
+    margin-bottom: 19px; /* gep below views, years */
+ }
+ 
+ .video-author{
+     margin: 5px 0 0; /* Add a small gap between title and author */
+ }
+
+ /*.video-preview{
+ width:300px; -- we remove it becouse it doesn't resize with the page
+ and now I want it to take up all the space in columns that it's inside of
+ display: inline-block;
+ vertical-align: top;
+ margin-right: 15px*/
+
+ /*.video-info{
+ display:inline-block; -- that it with channel-picture class appear next to each other
+ width: 200px;*/
+
+
+ .video-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; /* Combines column-gap and row-gap */ 
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color: black;
+ }
+
+ @media (max-width:600px){
+    .video-grid{
+        repeat(auto-fit, minmax(200px, 1fr)); /* Reduce minimum width for smaller screens */
+    }
+ }
+
+ .video-time{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px; /*padding-left,right,top, and botoom*/
+    border-radius: 2px;
+    background-color: rgb(39, 22, 22);
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+ }
+
+ @media screen and (max-width: 600px){
+
+    .thumbnail {
+        width: 120px;
+        height: 90px;
+    }
+
+    .video-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+ }
+
+ .profile-picture{
+    width: 25px;
+ }
+
+ .video-author,
+ .video-stats{
+    font-size: 9px;
+ }
+
+ .video-time{
+    font-size: 7px;
+ }
+}
+
